@@ -1,0 +1,456 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass USTCthesis
+\begin_preamble
+% Lyx template for USTC doctor/master thesis
+% Created by jmcui 6-23-2011 @USTC
+% use USTCthesis class: https://github.com/jmcui/USTC-Lyx
+
+% Template setup parameter
+% degree      = doctor | master | bachelor
+% degree-type = academic | professional
+% language    = chinese | english
+% fontset     = windows | mac | ubuntu | fandol
+
+
+\def\myref{Ref}
+\usepackage{bibentry}
+
+\input{ustcsetup.tex}
+\end_preamble
+\options degree=doctor, language=english, numbers
+\use_default_options false
+\begin_modules
+theorems-ams
+algorithm2e
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding gbk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "xetex,unicode=true"
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch GroupVersion
+\selected 1
+\filename_suffix 0
+\color #aaaa00
+\end_branch
+\index 索引
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Main Document
+\end_layout
+
+\begin_layout Enumerate
+The main structure，give an outlook of the whole document project。Use the
+ USTCthesis.layout in the working directory.
+ By click the view button in the main document, the whole project document
+ can be generated.
+\end_layout
+
+\begin_layout Enumerate
+Note：open the view: View\SpecialChar menuseparator
+Outlook side bar.
+\end_layout
+
+\begin_layout Enumerate
+When creat a new document，copy and dumplicate the 
+\begin_inset Quotes eld
+\end_inset
+
+Skills.lyx
+\begin_inset Quotes erd
+\end_inset
+
+ file and rename it to the file you needed, then open the file and edit
+ the content .
+\end_layout
+
+\begin_layout Enumerate
+Child document can be individually complied, which can efficiently improve
+ debug process.
+ By click the view button in the child document.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+封面
+\end_layout
+
+\begin_layout Enumerate
+Cover: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Set author information in the “ustcsetup.tex
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+\end_layout
+
+\begin_layout Enumerate
+Setting premeable area in the Main_English.lyx.
+ 
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makestatement
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Front Pages
+\end_layout
+
+\begin_layout Enumerate
+Abstract, Figure list, Table List and Algrathem List
+\end_layout
+
+\begin_layout Enumerate
+FrontMatter.lyx.
+ Open and edit this file, comment what is not needed and uncomment what
+ is need.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "./chapters/FrontMatter.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout MainMatter
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Chapters in thesis:
+\end_layout
+
+\begin_layout Enumerate
+Include the child document in sequence。You can also include tex file.
+\end_layout
+
+\begin_layout Enumerate
+Note: When you need a new chapter file, do not creat a new lyx file directly.
+ You should copy and dumplicate the 
+\begin_inset Quotes eld
+\end_inset
+
+Skills.lyx
+\begin_inset Quotes erd
+\end_inset
+
+ file, then rename it to the file you needed.
+ At last include the child document in the main document: Insert \SpecialChar menuseparator
+File\SpecialChar menuseparator
+Lyx
+ child file.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/Introduction.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/Skills.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Bibiliograpghy
+\end_layout
+
+\begin_layout Plain Layout
+Using Bibtex.
+ Already included in the main document, child document not need to include
+ it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "Ref"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Appendix:
+\end_layout
+
+\begin_layout Plain Layout
+Setting in the Apendix.lyx file，should be layed before back matter.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/Appendix.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BackMatter
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The page number after back matter will be ignored.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Here only thanks and publication are listed.
+\end_layout
+
+\begin_layout Plain Layout
+To insert new chapters files in here, similarily, you need to dumplicate
+ the 
+\begin_inset Quotes eld
+\end_inset
+
+thanks.lyx
+\begin_inset Quotes erd
+\end_inset
+
+ to a new file, rename the new file and include it.
+\end_layout
+
+\begin_layout Plain Layout
+If you need other chapter in the back matter, you can also use 
+\begin_inset Quotes eld
+\end_inset
+
+ChapterSpecial
+\begin_inset Quotes erd
+\end_inset
+
+ format to generate a chapter without chapter number in a file already existed.
+ 
+\begin_inset Quotes erd
+\end_inset
+
+ChapterSpecial
+\begin_inset Quotes erd
+\end_inset
+
+ format can also used in the main matter.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/thanks.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "chapters/Publication.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
