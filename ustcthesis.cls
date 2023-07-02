@@ -1,4 +1,4 @@
-%lyx模板使用该文件时，需要禁用\RequirePackage{subcaption}
+%lyx模板使用该文件时，需要禁用\RequirePackage{subcaption}。
 % Copyright (C) 2015-2023 by USTC TeX Users Group <https://github.com/ustctug>
 %
 % This file may be distributed and/or modified under the
