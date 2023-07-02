@@ -27,9 +27,9 @@
 
 - 校内镜像：
 
-- TexPage 模板 <https://www.texpage.com/share/88a775b210db4cf4b21cc2b826915bba>
+- TexPage 模板 <>暂不支持lyx
 
-- Overleaf 模板 <>
+- Overleaf 模板 <>暂不支持lyx
 
 - 研究生院网站：<>
 
