@@ -1,4 +1,4 @@
-%lyx模板使用该文件时，需要禁用\RequirePackage{subcaption}。
+%lyx模板使用该文件时，需要禁用\RequirePackage{subcaption}
 % Copyright (C) 2015-2023 by USTC TeX Users Group <https://github.com/ustctug>
 %
 % This file may be distributed and/or modified under the
@@ -1926,14 +1926,14 @@
     \cline{2-2}
     \cline{4-4}        
   \end{tabular}\par
-    \vskip 5bp%
+    \vskip 30bp%
     \centering
     % \parbox[t][0.6cm][t]{\textwidth}{%
     %   \raggedleft\fangsong\fontsize{14bp}{14bp}\selectfont
     %   \null\ustc@secret@level\par}\par
     %\vskip 0.5cm%
-    \includegraphics[width=10cm]{figures/ustc-title-page-heading.pdf}\par
-    \vskip -1cm%
+    \includegraphics[width=9cm]{figures/ustc-title-page-heading.pdf}\par
+    \vskip -0.4cm%
     {\sffamily\fontsize{24bp}{40bp}\selectfont\songti
       \renewcommand\CJKglue{\hspace{16bp}}硕士学位论文\par}%\ustc@thesis@name\par}%
     % \ifustc@degree@type@academic
@@ -1999,7 +1999,7 @@
         \renewcommand\CJKglue{\hspace{3bp}}\textsf{专业领域名称：} & \ustc@research \\
           \cline{2-2}
       \end{tabular}\par}\par%
-    \vskip 30bp%   
+    \vskip 20bp%   
           \fontsize{18bp}{30bp}\selectfont\fangsong\ustc@date@zh@big  
   \fi
 
