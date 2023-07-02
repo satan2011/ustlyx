@@ -23,6 +23,8 @@
 
 - GitHub Releases：<https://github.com/ustctug/ustcthesis/releases>
 
+- Gitee Releases：<https://gitee.com/satan2010/ustlyx>
+
 - 校内镜像：
 
 - TexPage 模板 <https://www.texpage.com/share/88a775b210db4cf4b21cc2b826915bba>
