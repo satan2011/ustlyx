@@ -2137,8 +2137,8 @@
     \centering
     % \vspace*{68bp}%
     %\vspace*{29.5bp}%
-    \includegraphics{figures/ustc-title-page-heading.pdf}\par
-    \vspace{0.8bp}%
+    \includegraphics[width=15cm]{figures/ustc-title-page-heading.pdf}\par
+    \vspace{20bp}%
     \begingroup
       \fontsize{42bp}{54.6bp}\heiti
       \renewcommand\CJKglue{\hspace{6.2bp}}%
